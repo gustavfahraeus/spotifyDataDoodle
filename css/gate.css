@@ -1,0 +1,58 @@
+/*
+  Page before we are logged in.
+*/
+
+#gate {
+  background-color: #101010;
+  height: calc(100vh - 241px);    
+}
+#gateTextContainer {
+  margin-top: 125px;
+}
+#gateText {
+  color: white;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+  text-align: center;
+  transition-duration: 0.17s;
+  transition-property: opacity;
+}
+#gateText:hover {
+  opacity: 1;
+}
+
+
+#gateGithubContainer {
+  bottom: 0px;
+  cursor: pointer;
+  height: 40px; 
+  position: absolute;
+  right: 0;
+  width: 160px;
+  z-index: 1;
+}
+
+#gateGithubName {
+  position: absolute;
+  line-height: 0px;
+  font-size: 15px;
+  top: 21px;
+  left: 11px;
+  padding: 0;
+  }
+
+#gate_github_logo {
+  position: absolute;
+  bottom: 11px;
+  margin-top: 16px;
+  height: 20px;
+  right: 8px;
+} 
+
+
+
+
+
+

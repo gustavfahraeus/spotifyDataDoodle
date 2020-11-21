@@ -1,0 +1,50 @@
+/*
+    CSS relating to the github links. 
+    There are two different ones: Gate and Non-Gate. The gate one's CSS is in 'gate.css'. 😊
+*/
+
+#linkContainer {
+  bottom: 0px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  width: 155px;
+}
+
+#githubName{
+  color: white;   
+  font-size: 15px;
+  line-height: 0px;
+  margin-right: 5px;
+  position: absolute;
+  right: 28px;
+  top: 25px;
+  user-select: none;          /* Likely future */  
+  -ms-user-select: none;      /* IE 10+ */
+  -moz-user-select: none;     /* Firefox all */
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  }
+
+.githubLogo {
+    position: absolute;
+    right: -22px;
+    height: 20px;
+    top: 13px;
+    float: right;
+    margin-right: 30px;
+    user-select: none; /* Standard */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    -webkit-user-select: none; /* Safari */        
+}
+
+/* Portrait Mode */
+@media screen and (max-width: 799px) {
+    #linkContainer {
+      margin-bottom: -50px;
+      height: 50px;
+    }
+} 
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Montserrat Font -->
+  <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap CSS. Used this for the grid system. Didn't really need this retrospectively.  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Custom JS  -->
+  <link rel="stylesheet" type="text/css" href="css/artistcells.css">
+  <link rel="stylesheet" type="text/css" href="css/gate.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/githubLink.css">
+  <link rel="stylesheet" type="text/css" href="css/statecontainer.css">
+
+  <title>spotifyDataDoodle</title>
+</head>
+
+
+<body id="body">
+
+  <div id="header">
+
+    <div id="userSlideoutMenu">
+      <a href="https://spotifydatadoodle.herokuapp.com" id="logOutItem">Log out</a>
+    </div>
+    <img id="userProfileMenuToggle"/>
+
+  </div>
+    
+  <!-- Seen only if user IS NOT logged in. -->
+  <div id="gate" class="container-fluid">
+
+    <div id="gateTextContainer" class="row">
+        <a id="gateText" href="https://spotifydatadoodle-oauth.herokuapp.com/login">
+          Login with Spotify to see your Top (25) Artists and Songs »
+        </a>    
+    </div>
+
+    <a href="http://github.com/gustavfahraeus" target="_blank" style="text-decoration: none; color: white;" >
+    <div id="gateGithubContainer">
+        <p id="gateGithubName">gustavfahraeus</p>
+         <img id="gate_github_logo" src="images/github_mark.png"/>
+      </a>
+   </div>
+
+  </div>
+
+  <!-- Everything below this is only shown if the user IS logged in.-->
+  <div id="state_container">
+
+      <div id="parameterDropdown" >
+        <a id="topArtists" class="dropdown-item type_option">&#9835 My Top Artists</a>
+        <a id="topSongs" class="dropdown-item type_option">My Top Songs</a>
+        <a id="shortTermState" class="dropdown-item time_option">&#9733 Short Term (~4 weeks)</a>
+        <a id="medium_term_state" class="dropdown-item time_option">Medium Term (~6 months)</a>
+        <a id="long_term_state" class="dropdown-item time_option" >Long Term (years back)</a>
+      </div>
+
+      <div id="parameterMenu">
+        <div id="dropdownToggle">Change Parameters</div>
+        <div id="firstTriangleIndicator"></div>
+      </div>
+ 
+      <div id="currentDataType">Artists (Top 25)</div>
+      <p id="currentTimePeriod" class="songs">Short Term (~4 weeks)</p>
+
+</div>
+
+<div id="serverContent"></div>
+
+</body>
+
+
+<script type="module" src="js/bundle.js"></script>
+</html>

@@ -1,0 +1,123 @@
+/*
+    Relating to the cells containing ranking and artist information. 🏆 
+*/ 
+
+/* One cell. */
+.artistEntry {
+    align-items: center;
+    background-color: #121212;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-right: 1px solid rgba(255,255,255,0.7);
+    display: flex;
+    height: 88px;
+    overflow-y: hidden; /* Prevents clipping text. Could probably fix this to look nicer. */
+    width: 385px;
+}
+/* ^Children  */
+.artistName {
+    padding-left: 19px;
+    margin-top: 15px;
+    opacity: 1;
+    overflow-x: hidden;
+    width: 215px; /* As to not clip into the image */
+}
+.artistImage {  
+    border-radius: 19px;
+    height: 60px;
+    margin-left: 235px;
+    opacity: 1;
+    position: absolute;
+    transition-duration: 0.5s, 0.7s;
+    transition-property: opacity, transform;
+    user-select: none; /* Standard */
+    -webkit-user-select: none; /* Chrome / Safari */        
+    -ms-user-select: none; /* IE10+/Edge */
+    -moz-user-select: none; /* Firefox */
+}
+.artistImage:hover {
+    transform: translateY(-4px);
+    transition-duration: 0.4s; /* Slide-up time */
+}
+
+/* As we go through different device widths we want to prevent stacking borders. */
+#firstCell {
+    border-top: 1px solid rgba(255,255,255,0.7);
+}
+#secondCell {
+    border-top: 1px solid rgba(255,255,255,0.7);
+}
+#thirdCell {
+    border-top: 1px solid rgba(255,255,255,0.7)
+}
+
+
+/* Mini Widths... */
+@media screen and (max-width: 365px)  {
+    #firstCell {
+        border-bottom: none;
+    }
+    #secondCell {
+        border-bottom: none;
+        
+    }
+}
+
+
+/* Portrait Mode */
+@media screen and (min-width: 366px) and (max-width: 799px)  {
+    
+    .artistEntry {
+        border-right: none;
+        height: 105px;
+        width: calc(96vw);
+    }
+    .artistName {
+        margin-top: -5px;
+        width: 180px;
+    }
+    .artistImage {
+        border-radius: 25px; 
+        height: 83px;
+    }
+
+    #firstCell {
+        border-bottom: none;
+    }
+    #secondCell {
+        border-bottom: none;
+        
+    }
+} 
+
+
+/* More than 1 Column */
+@media screen and (min-width: 800px) {
+    .artistEntry {
+        border-right: "1px solid rgba(255,255,255,0.7)";
+        float: left;
+    }
+    .artistName {
+        width: 205px;
+    }
+    #artistImage {
+        padding-left: 235px;
+    }
+}
+
+
+/* Two Columns */
+@media screen and (min-width: 800px) and (max-width: 1190px) {
+
+    #thirdCell {
+        border-top: none;
+    }
+}
+
+
+
+/* We don't want no more than 3 columns. */
+@media screen and (min-width: 1191px) {
+    .rightEdgeCell {
+        clear: left;
+    }
+}

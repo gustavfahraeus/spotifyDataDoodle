@@ -1,0 +1,33 @@
+{
+  "name": "myspotifystats-frontend",
+  "version": "1.0.0",
+  "description": "spotify app for tracking your top artists and stuff like that",
+  "main": "main.js",
+  "scripts": {
+    "build": "browserify -t babelify js/src.js js/stateChanges.js -o js/bundle.js",
+    "basic": "",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mySpotifyStats"
+  },
+  "author": "gustavfahraeus",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "colorthief": "^2.3.2",
+    "mocha": "^8.1.3",
+    "mongoose": "^5.10.2",
+    "spotify-web-api-js": "^1.5.0",
+    "spotify-web-api-node": "^4.0.0"
+  }
+}
