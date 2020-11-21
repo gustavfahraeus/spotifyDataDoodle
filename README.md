@@ -6,6 +6,8 @@ The purpose of spotifyDataDoodle is to show you what you have been listening to 
 
 More specifically you can see your Top 25 most listened to artists & songs in 3 different time intervals (~4 weeks, ~6 months, as well as some years back).
 
+The code handling the OAuth verification can be found at [github.com/gustavfahraeus/spotifydatadoodle-oauth](https://github.com/gustavfahraeus/spotifydatadoodle-oauth)
+
 # Future
 
 I am currently building an **"expansion"** of this project! <br/>
