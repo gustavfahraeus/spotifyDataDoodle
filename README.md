@@ -18,7 +18,7 @@ I want to create functionality for visitors to see how their individual listenin
 The goal is to build better understanding about how to go about structuring dataflow in web applications, as well as how to maintain a database. But if enough people used the site so that the data was somewhat representative and useful, that would be cool too 🌱. <br/>
 
 
-That project is being kept at [spotifyDataDoodle-expansion](https://github.com/gustavfahraeus/mySpotifyData-expansion). <br/>
+That project is being kept at [spotifyDataDoodle-expansion](https://github.com/gustavfahraeus/mySpotifyDataDoodle2). <br/>
 
 This repo lives on as a little time capsule. 🚀 <br/>
 Thanks for your time and interest! 
